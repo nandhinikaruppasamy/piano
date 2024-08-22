@@ -1,14 +1,14 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'welcome.dart'; // Import the WelcomePage
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    title: 'Piano App',
+    debugShowCheckedModeBanner: false,
+    home: WelcomePage(), // Start with the WelcomePage
+  ));
 }
 
 class MyApp extends StatelessWidget {
