@@ -1,13 +1,13 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'welcome.dart'; // Import the WelcomePage
+import 'welcome.dart'; 
 
 void main() {
   runApp(MaterialApp(
     title: 'Piano App',
     debugShowCheckedModeBanner: false,
-    home: WelcomePage(), // Start with the WelcomePage
+    home: WelcomePage(), 
   ));
 }
 
